@@ -62,15 +62,6 @@ on post-fs-data
     chown system system /sys/class/misc/m_batch_misc/batchbatch
     chown system system /sys/class/misc/m_batch_misc/batchflush
 
-    chmod 0660 /sys/class/misc/m_bio_misc/bioactive
-    chmod 0660 /sys/class/misc/m_bio_misc/biodelay
-    chmod 0660 /sys/class/misc/m_bio_misc/biobatch
-    chmod 0660 /sys/class/misc/m_bio_misc/bioflush
-    chown system system /sys/class/misc/m_bio_misc/bioactive
-    chown system system /sys/class/misc/m_bio_misc/biodelay
-    chown system system /sys/class/misc/m_bio_misc/biobatch
-    chown system system /sys/class/misc/m_bio_misc/bioflush
-
 	chmod 0660 /sys/class/misc/m_gyro_misc/gyroenablenodata
     chmod 0660 /sys/class/misc/m_gyro_misc/gyroactive
     chmod 0660 /sys/class/misc/m_gyro_misc/gyrodelay
@@ -120,15 +111,6 @@ on post-fs-data
     chown system system /sys/class/misc/m_alsps_misc/psdelay
     chown system system /sys/class/misc/m_alsps_misc/psbatch
     chown system system /sys/class/misc/m_alsps_misc/psflush
-
-    chmod 0660 /sys/class/misc/m_rgbw_misc/rgbwactive
-    chmod 0660 /sys/class/misc/m_rgbw_misc/rgbwdelay
-    chmod 0660 /sys/class/misc/m_rgbw_misc/rgbwbatch
-    chmod 0660 /sys/class/misc/m_rgbw_misc/rgbwflush
-    chown system system /sys/class/misc/m_rgbw_misc/rgbwactive
-    chown system system /sys/class/misc/m_rgbw_misc/rgbwdelay
-    chown system system /sys/class/misc/m_rgbw_misc/rgbwbatch
-    chown system system /sys/class/misc/m_rgbw_misc/rgbwflush
 
     chmod 0660 /sys/class/misc/m_baro_misc/baroenablenodata
     chmod 0660 /sys/class/misc/m_baro_misc/baroactive

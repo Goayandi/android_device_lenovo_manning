@@ -17,7 +17,6 @@
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md1dsp    0660    root    system
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md1arm7   0660    root    system
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md3img    0660    root    system
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot_para 0640    root    system
 
 # OTP
 /dev/otp                  0660   system     system
@@ -83,7 +82,6 @@
 /dev/ccci3_aud            0660   audio      audio
 /dev/eemcs_aud            0660   audio      audio
 /dev/irtx                 0660   system     system
-/dev/ir-learning          0660   system     system
 # SGX device node
 /dev/pvrsrvkm             0666   root       root
 /dev/pvr_sync             0666   root       root

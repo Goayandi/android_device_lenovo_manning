@@ -164,7 +164,6 @@ on load_persist_props_action
     start logd
     start logd-reinit
 
-
 # Mount filesystems and start core system services.
 on late-init
     trigger early-fs
@@ -192,7 +191,7 @@ on fs
     write /sys/class/android_usb/android0/f_ffs/aliases adb
 #INTERNAL_START
     write /proc/bootprof "INIT:Mount_START"
-    mount_all /fstab.mt6757 multi_init.rc
+    mount_all /fstab.mt6797 multi_init.rc
     write /proc/bootprof "INIT:Mount_END"
 #INTERNAL_END
 
@@ -401,8 +400,6 @@ on boot
     hostname localhost
     domainname localdomain
 
-    setprop logmuch.detect.value 10000
-
 #INTERNAL_START
     class_start default
 #INTERNAL_END
@@ -475,13 +472,6 @@ on property:ro.debuggable=1
     chmod 0773 /data/misc/trace
     start console
 
-
-service thermal_manager /vendor/bin/thermal_manager   vendor/etc/.tp/.thermal_meta.conf
-    class main
-    user root
-    group system
-    oneshot
-
 # adbd is controlled via property triggers in init.<platform>.usb.rc
 service adbd /sbin/adbd --root_seclabel=u:r:su:s0
     class core
@@ -526,4 +516,7 @@ on property:ro.boot.usbconfig=1
     write /sys/class/android_usb/android0/functions acm
     write /sys/class/android_usb/android0/bDeviceClass 02
     write /sys/class/android_usb/android0/enable 1
+
+on property:ro.lenovo.factory_reset=1
+    rm /cache/ctsflag
 #INTERNAL_END

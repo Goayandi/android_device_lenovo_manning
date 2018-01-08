@@ -187,7 +187,7 @@ on fs
 
 #INTERNAL_START
     write /proc/bootprof "INIT:Mount_START"
-    mount_all /fstab.mt6757 multi_init.rc
+    mount_all /fstab.mt6797 multi_init.rc
     write /proc/bootprof "INIT:Mount_END"
 #INTERNAL_END
 # mount different fs end
@@ -511,8 +511,6 @@ on boot
     hostname localhost
     domainname localdomain
 
-    setprop logmuch.detect.value 10000
-
     #INTERNAL_START
     # Start default class, this line is very important!!
     class_start default
@@ -655,41 +653,6 @@ service factory_no_image /vendor/bin/factory
 
 service mobile_log_d /vendor/bin/mobile_log_d
 	class main
-
-service emdlogger1 /vendor/bin/emdlogger1
-    class main
-    user shell
-    group system shell radio sdcard_rw inet sdcard_r media_rw
-    disabled
-    oneshot
-
-service emdlogger2 /vendor/bin/emdlogger2
-    class main
-    user shell
-    group system shell radio sdcard_rw inet sdcard_r media_rw
-    disabled
-    oneshot
-
-service emdlogger3 /vendor/bin/emdlogger3
-    class main
-    user shell
-    group system shell radio sdcard_rw inet sdcard_r media_rw
-    disabled
-    oneshot
-
-service emdlogger5 /vendor/bin/emdlogger5
-    class main
-    user shell
-    group system shell radio sdcard_rw inet sdcard_r media_rw
-    disabled
-    oneshot
-
-service emdlogger6 /vendor/bin/emdlogger6
-    class main
-    user shell
-    group system shell radio sdcard_rw inet sdcard_r media_rw
-    disabled
-    oneshot
 
 ## Custom service area (END)
 

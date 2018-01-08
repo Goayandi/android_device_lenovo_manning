@@ -13,6 +13,11 @@ on post-fs-data
     mkdir /data/misc/gps 0770 gps system
     chown gps system /data/mpe_mnl
     chmod 0775 /vendor/xbin/MPED
+
+# GPS EMI
+    chmod 666 /dev/gps_emi
+    chown gps gps /dev/gps_emi
+
 #
 # Connectivity related device nodes & configuration (end)
 #
