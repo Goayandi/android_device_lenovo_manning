@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),marino_f)
+ifeq ($(TARGET_DEVICE),manning)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

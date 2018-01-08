@@ -1,12 +1,12 @@
 # mt6797 platform boardconfig
-LOCAL_PATH := device/lenovo/marino_f
+LOCAL_PATH := device/lenovo/manning
 
 # Device board elements
 include $(LOCAL_PATH)/board/*.mk
 
 # Platform
 ARCH_ARM_HAVE_TLS_REGISTER := true
-TARGET_BOARD_PLATFORM := mt6757
+TARGET_BOARD_PLATFORM := mt6797
 
 # Images
 TARGET_NO_BOOTLOADER := true
@@ -39,7 +39,7 @@ TARGET_USES_64_BIT_BINDER := true
 
 TARGET_CPU_CORTEX_A53 := true
 
-TARGET_BOOTLOADER_BOARD_NAME := mt6757
+TARGET_BOOTLOADER_BOARD_NAME := mt6797
 
 # Kernel
 TARGET_USES_64_BIT_BINDER := true
@@ -53,7 +53,7 @@ BOARD_RAMDISK_OFFSET := 0x03f88000
 BOARD_TAGS_OFFSET := 0x0df88000
 BOARD_SECOND_OFFSET := 0x00e88000
 BOARD_MKBOOTIMG_ARGS := --board $(BOARD_NAME) --base $(BOARD_KERNEL_BASE) --pagesize $(BOARD_KERNEL_PAGESIZE) --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET) --second_offset $(BOARD_SECOND_OFFSET)
-TARGET_KERNEL_SOURCE := kernel/lenovo/marino_f
+TARGET_KERNEL_SOURCE := kernel/lenovo/manning
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 MTK_K64_SUPPORT := yes

@@ -4,15 +4,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/lenovo/marino_f/device.mk)
+$(call inherit-product, device/lenovo/manning/device.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := marino_f
+PRODUCT_RELEASE_NAME := manning
 
-PRODUCT_DEVICE := marino_f
-PRODUCT_NAME := full_marino_f
+PRODUCT_DEVICE := manning
+PRODUCT_NAME := full_manning
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := K8 plus
+PRODUCT_MODEL := K8 Note
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
