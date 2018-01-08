@@ -12,7 +12,7 @@ BOARD_EGL_CFG :=  $(LOCAL_PATH)/prebuilt/etc/egl.cfg
 TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/lenovo/marino_f/ril
+BOARD_RIL_CLASS := ../../../device/lenovo/manning/ril
 BOARD_CONNECTIVITY_MODULE := conn_soc
 
 # Sensors

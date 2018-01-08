@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += \
 
 	# GPS library
 PRODUCT_PACKAGES += \
-    gps.mt6757 \
+    gps.mt6797 \
     libcurl
 	
 PRODUCT_PACKAGES += \
