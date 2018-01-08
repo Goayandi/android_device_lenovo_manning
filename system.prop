@@ -1,6 +1,6 @@
 #
 #
-# system.prop for Lenovo K8 Plus
+# system.prop for Lenovo K8 Note
 #
 
 # RIL
@@ -38,7 +38,7 @@ qemu.hw.mainkeys=1
 debug.hwui.render_dirty_regions=false
 
 # LCD density
-ro.sf.lcd_density=480
+ro.sf.lcd_density=640
 
 ro.sf.hwrotation=0
 
@@ -61,8 +61,8 @@ ro.mtk_gps_support=1
 persist.md.perm.checked=1
 
 ro.mediatek.chip_ver=S01
-ro.mediatek.platform=MT6757
-ro.mediatek.version.release=alps-mp-n1.mp5-V1.19_lenovo6757.36.n.n1_P86
+ro.mediatek.platform=MT6797
+ro.mediatek.version.release=alps-mp-n1.mp9-V1_lenovo6797.6m.n_P101
 
 bgw.current3gband=0
 ro.sf.hwrotation=0
