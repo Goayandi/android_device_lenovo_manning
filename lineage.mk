@@ -18,7 +18,7 @@
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/device_marino_f.mk)
+$(call inherit-product, $(LOCAL_PATH)/device_manning.mk)
 
 # Device display
 TARGET_SCREEN_HEIGHT := 1920
@@ -26,9 +26,9 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier
 PRODUCT_BRAND := lenovo
-PRODUCT_DEVICE := marino_f
+PRODUCT_DEVICE := manning
 PRODUCT_MANUFACTURER := LENOVO
-PRODUCT_MODEL := Lenovo K8 Plus
-PRODUCT_NAME := lineage_marino_f
-PRODUCT_RELEASE_NAME := marino_f
+PRODUCT_MODEL := Lenovo K8 Note
+PRODUCT_NAME := lineage_manning
+PRODUCT_RELEASE_NAME := manning
 PRODUCT_RESTRICT_VENDOR_FILES := false

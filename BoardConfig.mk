@@ -15,13 +15,13 @@
 #
 
 # Device path
-LOCAL_PATH := device/lenovo/marino_f
+LOCAL_PATH := device/lenovo/manning
 
 # Device board elements
 include $(LOCAL_PATH)/board/*.mk
 
 # Device vendor board
--include vendor/lenovo/marino_f/BoardConfigVendor.mk
+-include vendor/lenovo/manning/BoardConfigVendor.mk
 
 #######################################################################
 
